@@ -14,14 +14,18 @@ app.get('/users', async (req: Request, res: Response) => {
 });
 
 app.get('/users/:id', async (req: Request, res: Response) => {
-    const id = Number(req.params.id);
+  const id = Number(req.params.id);
+  try {
     const user = await prisma.user.findUnique({
       where: {
         id,
       },
     });
     return res.json(user);
-  });
+  } catch (e) {
+    return res.status(400).json(e);
+  }
+});
 
 app.post('/users', async (req: Request, res: Response) => {
   const { name, email } = req.body;
