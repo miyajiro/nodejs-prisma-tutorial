@@ -25,3 +25,13 @@ Content-Type: application/json
     "content": "リレーションショッピンの設定を確認中",
     "authorId": 1
 }
+
+###
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "Prismaの基本2",
+    "content": "Postテーブルへの新規データ作成を確認",
+    "authorId": 1 
+}
