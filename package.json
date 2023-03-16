@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-prisma-tutorial",
+  "version": "1.0.0",
+  "description": "https://reffect.co.jp/node-js/prisma-basic の通りにNode.js(Express.js)環境でPrisma ORMを使ってみるリポジトリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyajiro/nodejs-prisma-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miyajiro/nodejs-prisma-tutorial/issues"
+  },
+  "homepage": "https://github.com/miyajiro/nodejs-prisma-tutorial#readme"
+}
