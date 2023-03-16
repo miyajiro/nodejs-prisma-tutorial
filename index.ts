@@ -15,13 +15,17 @@ app.get('/users', async (req: Request, res: Response) => {
 
 app.post('/users', async (req: Request, res: Response) => {
   const { name, email } = req.body;
-  const user = await prisma.user.create({
-    data: {
-      name,
-      email,
-    },
-  });
-  return res.json(user);
+  try {
+    const user = await prisma.user.create({
+      data: {
+        name,
+        email,
+      },
+    });
+    return res.json(user);
+  } catch (e) {
+    return res.status(400).json(e);
+  }
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
