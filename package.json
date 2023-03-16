@@ -4,6 +4,7 @@
   "description": "https://reffect.co.jp/node-js/prisma-basic の通りにNode.js(Express.js)環境でPrisma ORMを使ってみるリポジトリ",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "prisma": {
